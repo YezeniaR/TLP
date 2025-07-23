@@ -1,3 +1,7 @@
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from typing import List
+
 # Modelo de libro con Pydantic
 class Libro(BaseModel):
     id: int
